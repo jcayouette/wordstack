@@ -51,4 +51,4 @@ See [the-plan.md](./the-plan.md) for the complete architectural plan and impleme
 
 ## License
 
-*To be determined*
+MIT License - see [LICENSE](./LICENSE) for details
