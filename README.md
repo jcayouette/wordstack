@@ -43,7 +43,58 @@ WordStack is a scalable church website solution that provides:
 
 ## Getting Started
 
-*Coming soon: Full setup instructions*
+### Prerequisites
+
+- Node.js 18+ and npm
+- A Supabase account (free tier works great)
+- (Optional) YouTube API key for transcript fetching
+- (Optional) OpenAI API key for AI sermon processing
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/jcayouette/wordstack.git
+   cd wordstack
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Supabase**
+   - Create a new project at [supabase.com](https://supabase.com)
+   - Run the SQL in `supabase/schema.sql` in the Supabase SQL Editor
+   - Copy your project URL and anon key
+
+4. **Configure environment variables**
+   ```bash
+   cp .env.example .env.local
+   ```
+   Then fill in your Supabase credentials and API keys.
+
+5. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open [http://localhost:3000](http://localhost:3000)**
+
+### Project Structure
+
+```
+├── app/                 # Next.js 14 app directory
+├── components/          # React components
+├── lib/
+│   ├── supabase/       # Supabase client utilities
+│   └── utils.ts        # Utility functions
+├── supabase/
+│   └── schema.sql      # Database schema
+├── types/
+│   └── database.ts     # TypeScript types for database
+└── public/             # Static assets
+```
 
 ## Documentation
 

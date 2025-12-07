@@ -1,5 +1,18 @@
 # 📘 Church Website Modernization Plan
 
+
+Suggested starting order:
+
+Initialize Next.js 14 app with TypeScript, Tailwind, and shadcn/ui
+Set up Supabase - Create project, configure auth, define database schema
+Build sermon display - Simple page to show YouTube embed + transcript
+Add authentication - Supabase Auth with public/member/admin roles
+Create admin dashboard - For adding/editing sermons
+Implement AI sermon processing - Transcript cleanup workflow
+Add search (Algolia) and multilingual support
+Build event calendar
+Add Docusaurus later - Once core site is working
+
 **Tech Stack:** Next.js • Vercel • Supabase • YouTube • Algolia • Docusaurus
 
 ## 1. Project Overview
